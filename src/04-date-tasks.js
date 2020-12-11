@@ -116,6 +116,7 @@ function angleBetweenClockHands(date) {
 
   let angle = Math.abs(angleMm - angleHH);
 
+  // If the angle is greater than 180 degrees then subtract it from 360 degrees.
   if (angle > 180) angle = 360 - angle;
   return (angle * 2 * Math.PI) / 360;
 }
